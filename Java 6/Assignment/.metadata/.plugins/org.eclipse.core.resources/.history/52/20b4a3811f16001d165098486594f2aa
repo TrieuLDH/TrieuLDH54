@@ -1,0 +1,8 @@
+package com.example.assignment.service;
+
+import com.example.assignment.entity.Account;
+
+public interface AccountService {
+	
+	Account findById(String username);
+}

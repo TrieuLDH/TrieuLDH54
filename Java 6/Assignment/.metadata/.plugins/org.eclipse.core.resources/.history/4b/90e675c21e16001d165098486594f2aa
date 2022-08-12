@@ -1,0 +1,5 @@
+package com.example.assignment.rest.controller;
+
+public class RoleRestController {
+
+}

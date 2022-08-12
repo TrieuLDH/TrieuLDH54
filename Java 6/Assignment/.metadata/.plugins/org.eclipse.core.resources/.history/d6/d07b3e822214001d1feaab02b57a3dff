@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{/layout/index : : dynamic(~{::main})}">
+
+<body>
+    <main>
+		<div class="panel panel-primary">
+			<div class="panel-heading">SHOPPING CART</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Name</th>
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Amount</th>
+						<th class="2">Thao Tác</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+    </main>
+</body>
+</html>

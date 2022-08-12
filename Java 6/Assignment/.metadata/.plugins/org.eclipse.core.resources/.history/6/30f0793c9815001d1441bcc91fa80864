@@ -1,0 +1,13 @@
+package com.example.assignment.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.assignment.DAO.OrderDAO;
+import com.example.assignment.service.OrderService;
+
+@Service
+public class OrderServiceImpl implements OrderService{
+	@Autowired
+	OrderDAO odao;
+}

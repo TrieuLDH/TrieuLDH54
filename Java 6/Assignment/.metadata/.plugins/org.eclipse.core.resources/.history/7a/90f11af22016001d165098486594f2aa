@@ -1,0 +1,13 @@
+package com.example.assignment.service;
+
+import java.util.List;
+
+import com.example.assignment.entity.Authority;
+
+public interface AuthorityService {
+
+	List<Authority> findAuthoritiesOfAdministrators();
+
+	Authority create(Authority auth);
+
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{/layout/index::dynamic(~{::main})}">
+
+<body>
+    <main th:object="${order}">
+        <div class="panel panel-primary">
+        	<div class="panel-heading">Order Infomation</div>
+        	<div class="panel-body">
+        		<div class="row">
+        			<div class="form-group col-sm-4">
+        				<div>Order Number</div>
+        				<input th:field="*{id}" class="form-control" readonly />
+        			</div>
+					<div class="form-group col-sm-4">
+						<div>Purchase:</div>
+						<input th:field="*{account.username}" class="form-control" readonly />
+					</div>  
+					<div class="form-group col-sm-4">
+						<div>Purchase Date:</div>
+						<input th:field="*{createDate}" class="form-control" readonly />
+					</div>         			
+        		</div>
+        		<div class="row">
+					<div class="form-group col-sm-12">
+						<div>Shipping Address</div>
+						<textarea th:field="*{address}" class="form-control" readonly></textarea>
+					</div>        		
+        		</div>
+        	</div>
+        </div>
+
+    </main>
+</body>
+</html>

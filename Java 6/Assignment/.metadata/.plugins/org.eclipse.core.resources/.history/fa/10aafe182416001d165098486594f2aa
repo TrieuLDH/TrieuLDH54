@@ -1,0 +1,23 @@
+app.controller("authority-ctrl", function($scope, $http, $location){
+	$scope.roles = [];
+	$scope.admins = [];
+	$scope.authorities = [];
+	
+	$scope.initialize = function(){
+		// Load role
+		$http.get("/rest/roles").then(resp => {
+			$scope.roles = resp.data;
+		})
+		//load nv và dir
+		$http.get("/rest/accounts?admin=true").then(resp => {
+			$scope.admins = resp.data;
+		})
+		
+		// load authorities và nv và dir
+		$http.get("/rest/authorities?admin=true").then(resp => {
+			$scope.authorities = resp.data;
+		}).catch(error => {
+			$location.path("/unauthorized");
+		})
+	}
+});

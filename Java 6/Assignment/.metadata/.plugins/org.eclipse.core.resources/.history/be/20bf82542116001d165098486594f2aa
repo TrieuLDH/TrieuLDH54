@@ -1,0 +1,35 @@
+package com.example.assignment.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.assignment.DAO.AccountDAO;
+import com.example.assignment.DAO.AuthorityDAO;
+import com.example.assignment.entity.Account;
+import com.example.assignment.entity.Authority;
+import com.example.assignment.service.AuthorityService;
+
+@Service
+public class AuthorityServiceImpl implements AuthorityService{
+	
+	@Autowired
+	AuthorityDAO dao;
+	
+	@Autowired
+	AccountDAO acdao;
+
+	@Override
+	public List<Authority> findAuthoritiesOfAdministrators() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Authority create(Authority auth) {
+		List<Account> accounts = acdao.getAdministrators();
+		return dao.authoritiesOf(accounts);
+	}
+
+}

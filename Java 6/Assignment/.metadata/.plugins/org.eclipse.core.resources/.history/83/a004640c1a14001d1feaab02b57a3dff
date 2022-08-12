@@ -1,0 +1,12 @@
+package com.example.assignment.interceptor;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.servlet.HandlerInterceptor;
+
+import com.example.assignment.service.CategoryService;
+
+public class GlobalInterceptor implements HandlerInterceptor{
+
+	@Autowired
+	CategoryService categoryService;
+}
