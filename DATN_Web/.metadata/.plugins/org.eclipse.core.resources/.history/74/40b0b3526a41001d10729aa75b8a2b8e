@@ -1,0 +1,10 @@
+
+spring.datasource.url=jdbc:sqlserver://localhost:3306/j6assignment
+spring.datasource.username=sa
+spring.datasource.password=123456
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.jpa.show-sql=false 
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.hibernate.ddl-auto=none 
+spring.main.allow-circular-references=true
+
