@@ -1,0 +1,35 @@
+package datn.website.asia.entities;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@SuppressWarnings("serial")
+@Data
+@Entity
+@Table(name = "chitietsanpham")
+public class ChiTietSanPham implements Serializable{
+
+	@Id
+	private int iDChiTietSanPham;
+	private int iDKichCo;
+	private int iDMauSac;
+	private int iDDonViTinh;
+	private int iDChatLieu;
+	private int iDGioiTinh;
+	private String moTa;
+	private float giaTien;
+	private String tenChiTiet;
+	private int soLuong;
+	private int trangThai;
+	
+	@ManyToOne
+	@JoinColumn(name = "iDSanPham")
+	private SanPham sanpham;
+}

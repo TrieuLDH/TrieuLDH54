@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.data.relational.core.mapping.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.NguoiDung"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.VaiTro"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.TaiKhoan"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.HoaDon"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.NhaSanXuat"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.DanhMuc"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.SanPham"/>
+    <fullyQualifiedTypeName name="javax.persistence.ManyToMany"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.HoaDonChiTiet"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.MauSac"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.ChatLieu"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.KichCoSanPham"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.GioiTinh"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.ChiTietSanPham"/>
+    <fullyQualifiedTypeName name="datn.website.asia.entities.DonViTinh"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,21 @@
+package datn.website.asia.entities;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@SuppressWarnings("serial")
+@Data
+@Entity
+@Table(name = "donvitinh")
+public class DonViTinh implements Serializable{
+
+	@Id
+	private int iDDonViTinh;
+	private String tenDonViTinh;
+	private int trangThai;
+}
